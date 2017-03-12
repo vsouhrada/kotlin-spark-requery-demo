@@ -3,6 +3,8 @@ version '1.0.0-SNAPSHOT'
 
 buildscript {
     ext.kotlin_version = '1.1.0'
+    ext.spark_version = '2.5.5'
+    ext.slf4j_version = '1.7.24'
 
     repositories {
         jcenter()
@@ -25,6 +27,8 @@ repositories {
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
+    compile "com.sparkjava:spark-core:$spark_version"
+    compile "org.slf4j:slf4j-simple:$slf4j_version"
 
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
